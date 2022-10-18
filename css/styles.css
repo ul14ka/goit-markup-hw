@@ -1,0 +1,82 @@
+body {
+	background-color: #fff;
+	color: #212121;
+	font-family: "Raleway", sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+.list {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2196f3;
+}
+
+button {
+	cursor: pointer;
+}
+
+.site-nav .list {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+}
+
+.contact-nav .link {
+	color: #757575;
+}
+
+.features-title {
+	color: #fff;
+	font-style: 400;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.facts-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.facts-list .text {
+	color: #757575;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.work-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.team-list .name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.9;
+}
+.team-list .prof {
+	color: #757575;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.9;
+}
