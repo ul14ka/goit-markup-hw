@@ -1,8 +1,24 @@
 body {
 	background-color: #fff;
 	color: #212121;
-	font-family: "Raleway", sans-serif;
 	font-family: "Roboto", sans-serif;
+}
+
+.top-menu {
+	display: block;
+}
+
+.logo {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+}
+
+.logo-web {
+	color: #2196f3;
 }
 
 .list {
@@ -10,6 +26,7 @@ body {
 }
 
 a {
+	color: #212121;
 	text-decoration: none;
 }
 
@@ -19,9 +36,18 @@ a:hover {
 
 button {
 	cursor: pointer;
+	background: #f5f4fa;
+	border-radius: 4px;
+	padding: 6px 22px;
+	border: none;
 }
 
-.site-nav .list {
+button:hover {
+	background-color: #2196f3;
+	color: #fff;
+}
+
+.site-nav {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -33,11 +59,11 @@ button {
 
 .features-title {
 	color: #fff;
-	font-style: 400;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.4;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .facts-title {
@@ -50,7 +76,6 @@ button {
 
 .facts-list .text {
 	color: #757575;
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.7;
 }
@@ -76,7 +101,14 @@ button {
 }
 .team-list .prof {
 	color: #757575;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.9;
+}
+
+.card-filter li {
+	display: inline-block;
+}
+
+address {
+	font-style: normal;
 }
