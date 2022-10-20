@@ -40,6 +40,11 @@ button {
 	border-radius: 4px;
 	padding: 6px 22px;
 	border: none;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.9;
 }
 
 button:hover {
@@ -56,6 +61,9 @@ button:hover {
 .contact-nav .link {
 	color: #757575;
 }
+.contact-nav .link:hover {
+	color: #2196f3;
+}
 
 .features-title {
 	color: #fff;
@@ -64,6 +72,7 @@ button:hover {
 	line-height: 1.4;
 	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 0.06em;
 }
 
 .facts-title {
@@ -107,8 +116,31 @@ button:hover {
 
 .card-filter li {
 	display: inline-block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
 }
 
 address {
 	font-style: normal;
+}
+.map-nav {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #ffffff;
+}
+
+.name-card {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+}
+.name-description {
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.9;
+	color: #757575;
 }
