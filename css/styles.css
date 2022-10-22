@@ -34,7 +34,7 @@ a:hover {
 	color: #2196f3;
 }
 
-button {
+.features-btn {
 	cursor: pointer;
 	background: #f5f4fa;
 	border-radius: 4px;
@@ -45,6 +45,9 @@ button {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.9;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
 }
 
 button:hover {
@@ -56,13 +59,22 @@ button:hover {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .contact-nav .link {
 	color: #757575;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.4;
+	letter-spacing: 0.02em;
 }
 .contact-nav .link:hover {
 	color: #2196f3;
+}
+
+footer .contact-nav .link {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .features-title {
@@ -87,6 +99,7 @@ button:hover {
 	color: #757575;
 	font-size: 14px;
 	line-height: 1.7;
+	letter-spacing: 0.03em;
 }
 
 .work-title {
@@ -94,6 +107,7 @@ button:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	text-align: center;
+	letter-spacing: 0.03em;
 }
 
 .team-title {
@@ -101,26 +115,36 @@ button:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	text-align: center;
+	letter-spacing: 0.03em;
 }
 
 .team-list .name {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.9;
+	letter-spacing: 0.03em;
 }
 .team-list .prof {
 	color: #757575;
 	font-size: 16px;
 	line-height: 1.9;
+	letter-spacing: 0.03em;
 }
 
-.card-filter li {
+.btn-filter {
 	display: inline-block;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
 	text-align: center;
 	letter-spacing: 0.03em;
+	border: none;
+	font-family: "Roboto";
+	font-style: normal;
+	align-items: center;
+	background: #f5f5f5;
+	border-radius: 4px;
+	padding: 6px 22px;
 }
 
 address {
@@ -143,4 +167,13 @@ address {
 	font-size: 16px;
 	line-height: 1.9;
 	color: #757575;
+}
+
+.card-filter li {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
 }
