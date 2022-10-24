@@ -1,35 +1,13 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-	margin: 0;
-	padding: 0;
+/*prettier-ignore*/
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
 body {
 	background-color: #fff;
 	color: #212121;
 	font-family: "Roboto", sans-serif;
-}
-
-.top-menu {
-	display: flex;
-	align-items: center;
-	height: 80px;
-}
-
-.logo {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-	margin-right: 93px;
 }
 
 .logo-blue {
@@ -53,98 +31,76 @@ a:hover {
 	color: #2196f3;
 }
 
-.features-btn {
-	cursor: pointer;
-	padding: 6px 22px;
-	border: none;
-	font-weight: 700;
-	line-height: 1.9;
-	letter-spacing: 0.06em;
-	color: #fff;
-	background: #2196f3;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-}
-
-button:hover {
-	background-color: #2196f3;
-	color: #fff;
-}
-
-section {
+.section {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
 
-.header-nav {
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* region Top-bar */
+.top-bar {
+	border-bottom: 1px solid #ececec;
+}
+.top-bar-container {
+	display: flex;
+	align-items: center;
+	height: 80px;
+}
+
+.top-bar-logo {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+	margin-right: 93px;
+}
+
+.top-bar-nav {
 	display: flex;
 }
 
-.header-nav-list {
+.top-bar-nav-list {
 	display: flex;
 	gap: 50px;
 }
 
-.header-nav-item {
+.top-bar-nav-item {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
 
-.contact-nav-list {
+.top-bar-link {
+	padding: 32px 0;
+}
+
+.top-bar-contact-list {
 	display: flex;
 	gap: 50px;
 	margin-left: auto;
 }
 
-.contact-nav-link {
+.top-bar-contact-link {
 	color: #757575;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.4;
-	letter-spacing: 0.02em;
 }
-.contact-nav-link:hover {
-	color: #2196f3;
-}
+/*endregion*/
 
-footer {
-	padding: 60px 0;
-	background: #2f303a;
-}
-
-.footer-logo {
-	margin-bottom: 20px;
-	display: inline-block;
-}
-
-.footer-contact-list {
-	font-style: normal;
-}
-
-.footer-contact-list li {
-	margin-bottom: 9px;
-}
-
-.footer-contact-link {
-	color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-map-link {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #ffffff;
-}
-
-.features {
+/* region Banner */
+.banner {
 	background: #2f303a;
 	padding: 200px 0;
 	text-align: center;
 }
 
-.features-title {
+.banner-title {
 	color: #fff;
 	font-weight: 900;
 	font-size: 44px;
@@ -155,7 +111,32 @@ footer {
 	margin-bottom: 30px;
 }
 
-.facts-title {
+.banner-btn {
+	cursor: pointer;
+	padding: 10px 32px;
+	border: none;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	font-weight: 700;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	color: #fff;
+}
+/* endregion */
+
+/* region Feature */
+.feature-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.feature-item {
+	flex-basis: calc((100% - 30px * 3) / 4);
+}
+
+.feature-title {
 	margin-bottom: 10px;
 	font-weight: 700;
 	font-size: 14px;
@@ -164,17 +145,15 @@ footer {
 	text-transform: uppercase;
 }
 
-.facts-list {
-	display: flex;
-}
-
-.facts-list .text {
+.feature-description {
 	color: #757575;
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
 }
+/* endregion */
 
+/* region Work */
 .work-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -182,7 +161,7 @@ footer {
 }
 
 .work-item {
-	flex-basis: calc((100% - 30px * 2) / 4);
+	flex-basis: calc((100% - 30px * 2) / 3);
 }
 
 .work-title {
@@ -193,13 +172,9 @@ footer {
 	text-align: center;
 	letter-spacing: 0.03em;
 }
+/* endregion */
 
-.container {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
+/* region Team */
 .team {
 	background: #f5f4fa;
 }
@@ -233,6 +208,7 @@ footer {
 	line-height: calc(19 / 16);
 	letter-spacing: 0.03em;
 }
+
 .team-list .prof {
 	color: #757575;
 	font-size: 16px;
@@ -244,36 +220,10 @@ footer {
 	padding: 30px 0;
 	text-align: center;
 }
+/* endregion */
 
-.btn-filter {
-	display: inline-block;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.6;
-	text-align: center;
-	letter-spacing: 0.03em;
-	border: none;
-	font-family: "Roboto";
-	font-style: normal;
-	align-items: center;
-	background: #f5f5f5;
-	border-radius: 4px;
-	padding: 6px 22px;
-}
-
-.name-card {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
-}
-.name-description {
-	font-style: normal;
-	font-size: 16px;
-	line-height: 1.9;
-	color: #757575;
-}
-
-.card-filter-list {
+/* region Portfolio */
+.portfolio-filter-list {
 	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
@@ -281,7 +231,7 @@ footer {
 	gap: 8px;
 }
 
-.card-filter-item {
+.portfolio-filter-item {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
@@ -289,13 +239,30 @@ footer {
 	letter-spacing: 0.03em;
 }
 
-.card-portfolio-list {
+.portfolio-filter-btn {
+	cursor: pointer;
+	background: #f5f4fa;
+	border-radius: 4px;
+	padding: 6px 22px;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+	border: none;
+	font-family: "Roboto";
+}
+
+.portfolio-filter-btn:hover {
+	background-color: #2196f3;
+	color: #fff;
+}
+
+.portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 }
 
-.card-portfolio-item {
+.portfolio-item {
 	flex-basis: calc((100% - 30px * 2) / 3);
 }
 
@@ -304,3 +271,48 @@ footer {
 	border: 1px solid #eeeeee;
 	border-top: none;
 }
+
+.portfolio-item-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+}
+
+.portfolio-item-description {
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.9;
+	color: #757575;
+}
+/* endregion */
+
+/* region Footer */
+.footer {
+	padding: 60px 0;
+	background: #2f303a;
+}
+
+.footer-logo {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.footer-contact-list {
+	font-style: normal;
+}
+
+.footer-contact-item {
+	margin-bottom: 9px;
+}
+
+.footer-contact-link {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-map-link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #ffffff;
+}
+/* endregion */

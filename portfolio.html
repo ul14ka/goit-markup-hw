@@ -9,118 +9,128 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+			referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header>
-			<div class="container top-menu">
-				<a href="./index.html" class="logo">
+		<header class="top-bar">
+			<div class="container top-bar-container">
+				<a href="./index.html" class="top-bar-logo">
 					<span class="logo-blue">Web</span>
 					<span>Studio</span>
 				</a>
-				<nav class="header-nav">
-					<ul class="header-nav-list list">
-						<li class="header-nav-item">
-							<a href="./index.html" class="link">Студія</a>
+				<nav class="top-bar-nav">
+					<ul class="top-bar-nav-list list">
+						<li class="top-bar-nav-item">
+							<a href="./index.html" class="top-bar-link">Студія</a>
 						</li>
-						<li class="header-nav-item">
-							<a href="./portfolio.html" class="link">Портфоліо</a>
+						<li class="top-bar-nav-item">
+							<a href="./portfolio.html" class="top-bar-link">Портфоліо</a>
 						</li>
-						<li class="header-nav-item">
-							<a href="" class="link">Контакти</a>
+						<li class="top-bar-nav-item">
+							<a href="" class="top-bar-link">Контакти</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="contact-nav-list list">
-					<li>
-						<a href="malito:info@devstudio.com" class="contact-nav-link">info@devstudio.com</a>
+				<ul class="top-bar-contact-list list">
+					<li class="top-bar-nav-item">
+						<a href="malito:info@devstudio.com" class="top-bar-link top-bar-contact-link">info@devstudio.com</a>
 					</li>
-					<li><a href="tel:+380961111111" class="contact-nav-link">+38 096 111 11 11</a></li>
+					<li class="top-bar-nav-item">
+						<a href="tel:+380961111111" class="top-bar-link top-bar-contact-link">+38 096 111 11 11</a>
+					</li>
 				</ul>
 			</div>
 		</header>
 
 		<main>
-			<section>
+			<section class="section">
 				<div class="container">
-					<ul class="card-filter-list list">
-						<li class="card-filter-item"><button type="button" class="btn-filter">Усі</button></li>
-						<li class="card-filter-item"><button type="button" class="btn-filter">Веб-сайти</button></li>
-						<li class="card-filter-item"><button type="button" class="btn-filter">Додатки</button></li>
-						<li class="card-filter-item"><button type="button" class="btn-filter">Дизайн</button></li>
-						<li class="card-filter-item"><button type="button" class="btn-filter">Маркетинг</button></li>
+					<ul class="portfolio-filter-list list">
+						<li class="portfolio-filter-item">
+							<button type="button" class="portfolio-filter-btn">Усі</button>
+						</li>
+						<li class="portfolio-filter-item">
+							<button type="button" class="portfolio-filter-btn">Веб-сайти</button>
+						</li>
+						<li class="portfolio-filter-item">
+							<button type="button" class="portfolio-filter-btn">Додатки</button>
+						</li>
+						<li class="portfolio-filter-item">
+							<button type="button" class="portfolio-filter-btn">Дизайн</button>
+						</li>
+						<li class="portfolio-filter-item">
+							<button type="button" class="portfolio-filter-btn">Маркетинг</button>
+						</li>
 					</ul>
-					<ul class="card-portfolio-list list">
-						<li class="card-portfolio-item">
+					<ul class="portfolio-list list">
+						<li class="portfolio-item">
 							<img src="images/portfolio/tehnokriak.svg" alt="ноутбук, сайт" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Технокряк</h3>
-								<p class="name-description">Веб-сайт</p>
+								<h3 class="portfolio-item-name">Технокряк</h3>
+								<p class="portfolio-item-description">Веб-сайт</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/neworlean.svg" alt="баскетболтсти, спортсмени" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Постер New Orlean vs Golden Star</h3>
-								<p class="name-description">Дизайн</p>
+								<h3 class="portfolio-item-name">Постер New Orlean vs Golden Star</h3>
+								<p class="portfolio-item-description">Дизайн</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/seafood.svg" alt="логотип ресторана Seafood" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Ресторан Seafood</h3>
-								<p class="name-description">Додаток</p>
+								<h3 class="portfolio-item-name">Ресторан Seafood</h3>
+								<p class="portfolio-item-description">Додаток</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/prime.svg" alt="Навушники" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Проєкт Prime</h3>
-								<p class="name-description">Маркетинг</p>
+								<h3 class="portfolio-item-name">Проєкт Prime</h3>
+								<p class="portfolio-item-description">Маркетинг</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/boxes.svg" alt="дві коробки" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Проєкт Boxes</h3>
-								<p class="name-description">Додаток</p>
+								<h3 class="portfolio-item-name">Проєкт Boxes</h3>
+								<p class="portfolio-item-description">Додаток</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/inspiration.svg" alt="комп'ютер, сайт" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Inspiration has no Borders</h3>
-								<p class="name-description">Веб-сайт</p>
+								<h3 class="portfolio-item-name">Inspiration has no Borders</h3>
+								<p class="portfolio-item-description">Веб-сайт</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/limitedrdition.svg" alt="дизайн, книга" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Видання Limited Edition</h3>
-								<p class="name-description">Дизайн</p>
+								<h3 class="portfolio-item-name">Видання Limited Edition</h3>
+								<p class="portfolio-item-description">Дизайн</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/lab.svg" alt="Маркетинг, бірка" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Проект LAB</h3>
-								<p class="name-description">Маркетинг</p>
+								<h3 class="portfolio-item-name">Проект LAB</h3>
+								<p class="portfolio-item-description">Маркетинг</p>
 							</div>
 						</li>
-						<li class="card-portfolio-item">
+						<li class="portfolio-item">
 							<img src="images/portfolio/growing.svg" alt="ноутбук, сайт, руки набирають текст" width="370" />
 							<div class="portfolio-wrapper">
-								<h3 class="name-card">Growing Business</h3>
-								<p class="name-description">Додаток</p>
+								<h3 class="portfolio-item-name">Growing Business</h3>
+								<p class="portfolio-item-description">Додаток</p>
 							</div>
 						</li>
 					</ul>
@@ -128,7 +138,7 @@
 			</section>
 		</main>
 
-		<footer>
+		<footer class="footer">
 			<div class="container">
 				<a href="./index.html" class="footer-logo">
 					<span class="logo-blue">Web</span>
@@ -136,18 +146,21 @@
 				</a>
 				<address>
 					<ul class="footer-contact-list list">
-						<li>
+						<li class="footer-contact-item">
 							<a
 								href="https://goo.gl/maps/sbAmnMv2D6VNsKyL6"
 								class="footer-map-link"
 								target="_blank"
-								rel="noopener noreferrer nofollow"
-							>
+								rel="noopener noreferrer nofollow">
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li><a href="malito:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a></li>
-						<li><a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a></li>
+						<li class="footer-contact-item">
+							<a href="malito:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a>
+						</li>
+						<li class="footer-contact-item">
+							<a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a>
+						</li>
 					</ul>
 				</address>
 			</div>

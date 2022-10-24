@@ -9,76 +9,83 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+			referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header>
-			<div class="container top-menu">
-				<a href="./index.html" class="logo">
+		<header class="top-bar">
+			<div class="container top-bar-container">
+				<a href="./index.html" class="top-bar-logo">
 					<span class="logo-blue">Web</span>
 					<span>Studio</span>
 				</a>
-				<nav class="header-nav">
-					<ul class="header-nav-list list">
-						<li class="header-nav-item">
-							<a href="./index.html" class="link">Студія</a>
+				<nav class="top-bar-nav">
+					<ul class="top-bar-nav-list list">
+						<li class="top-bar-nav-item">
+							<a href="./index.html" class="top-bar-link">Студія</a>
 						</li>
-						<li class="header-nav-item">
-							<a href="./portfolio.html" class="link">Портфоліо</a>
+						<li class="top-bar-nav-item">
+							<a href="./portfolio.html" class="top-bar-link">Портфоліо</a>
 						</li>
-						<li class="header-nav-item">
-							<a href="" class="link">Контакти</a>
+						<li class="top-bar-nav-item">
+							<a href="" class="top-bar-link">Контакти</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="contact-nav-list list">
-					<li>
-						<a href="malito:info@devstudio.com" class="contact-nav-link">info@devstudio.com</a>
+				<ul class="top-bar-contact-list list">
+					<li class="top-bar-nav-item">
+						<a href="malito:info@devstudio.com" class="top-bar-link top-bar-contact-link">info@devstudio.com</a>
 					</li>
-					<li><a href="tel:+380961111111" class="contact-nav-link">+38 096 111 11 11</a></li>
+					<li class="top-bar-nav-item">
+						<a href="tel:+380961111111" class="top-bar-link top-bar-contact-link">+38 096 111 11 11</a>
+					</li>
 				</ul>
 			</div>
 		</header>
+
 		<main>
-			<section class="features">
+			<section class="section banner">
 				<div class="container">
-					<h1 class="features-title">Ефективні рішення для вашого бізнесу</h1>
-					<button type="button" class="features-btn">Замовити послугу</button>
+					<h1 class="banner-title">Ефективні рішення для вашого бізнесу</h1>
+					<button type="button" class="banner-btn">Замовити послугу</button>
 				</div>
 			</section>
-			<section class="facts">
+			<section class="section">
 				<div class="container">
-					<ul class="facts-list list">
-						<li class="facts">
-							<h3 class="facts-title">Увага до деталей</h3>
-							<p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+					<ul class="feature-list list">
+						<li class="feature-item">
+							<h3 class="feature-title">Увага до деталей</h3>
+							<p class="feature-description">
+								Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+							</p>
 						</li>
-						<li class="facts">
-							<h3 class="facts-title">Пунктуальність</h3>
-							<p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+						<li class="feature-item">
+							<h3 class="feature-title">Пунктуальність</h3>
+							<p class="feature-description">
+								Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+							</p>
 						</li>
-						<li class="facts">
-							<h3 class="facts-title">Планування</h3>
-							<p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+						<li class="feature-item">
+							<h3 class="feature-title">Планування</h3>
+							<p class="feature-description">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
-						<li class="facts">
-							<h3 class="facts-title">Сучасні технології</h3>
-							<p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+						<li class="feature-item">
+							<h3 class="feature-title">Сучасні технології</h3>
+							<p class="feature-description">
+								Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+							</p>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<section class="work">
+			<section class="section work">
 				<h2 class="work-title">Чим ми займаємося</h2>
 				<div class="container">
 					<ul class="work-list list">
@@ -94,7 +101,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="team">
+			<section class="section team">
 				<div class="container">
 					<h2 class="team-title">Наша команда</h2>
 
@@ -131,7 +138,8 @@
 				</div>
 			</section>
 		</main>
-		<footer>
+
+		<footer class="footer">
 			<div class="container">
 				<a href="./index.html" class="footer-logo">
 					<span class="logo-blue">Web</span>
@@ -139,18 +147,21 @@
 				</a>
 				<address>
 					<ul class="footer-contact-list list">
-						<li>
+						<li class="footer-contact-item">
 							<a
 								href="https://goo.gl/maps/sbAmnMv2D6VNsKyL6"
 								class="footer-map-link"
 								target="_blank"
-								rel="noopener noreferrer nofollow"
-							>
+								rel="noopener noreferrer nofollow">
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li><a href="malito:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a></li>
-						<li><a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a></li>
+						<li class="footer-contact-item">
+							<a href="malito:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a>
+						</li>
+						<li class="footer-contact-item">
+							<a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a>
+						</li>
 					</ul>
 				</address>
 			</div>
