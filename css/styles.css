@@ -307,14 +307,18 @@ a:hover {
 .footer-logo {
 	margin-bottom: 20px;
 	display: inline-block;
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
 }
 
 .footer-contact-list {
 	font-style: normal;
-}
-
-.footer-contact-item {
-	margin-bottom: 9px;
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
 }
 
 .footer-contact-link {
