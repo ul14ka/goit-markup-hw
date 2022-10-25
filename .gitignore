@@ -3,5 +3,6 @@
 .Spotlight-V100
 .Trashes
 
-# IDEA config files
+# IDE config files
 .idea/
+.vscode/
