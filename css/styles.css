@@ -98,6 +98,12 @@ a:hover {
 	background: #2f303a;
 	padding: 200px 0;
 	text-align: center;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/banner-img.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
 .banner-container {
@@ -136,6 +142,16 @@ a:hover {
 /* region Feature */
 .feature {
 	padding-bottom: 0;
+}
+
+.feature-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	height: 120px;
+	border-radius: 4px;
+	background-color: #f5f4fa;
 }
 
 .feature-list {
@@ -226,12 +242,45 @@ a:hover {
 	font-size: 16px;
 	line-height: calc(19 / 16);
 	letter-spacing: 0.03em;
+	margin-bottom: 16px;
 }
 
 .team-wrapper {
 	padding: 30px 0;
 	text-align: center;
 }
+
+.team-socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.team-socials-item {
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+}
+
+.team-socials-item:hover {
+	background-color: #2196f3;
+}
+
+.team-socials-item:hover .team-socials-icon {
+	fill: #fff;
+}
+
+.team-socials-link {
+}
+
+.team-socials-icon {
+	fill: #afb1b8;
+}
+
 /* endregion */
 
 /* region Portfolio */
