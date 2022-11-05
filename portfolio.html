@@ -37,10 +37,20 @@
 				</nav>
 				<ul class="top-bar-contact-list list">
 					<li class="top-bar-nav-item">
-						<a href="malito:info@devstudio.com" class="top-bar-link top-bar-contact-link">info@devstudio.com</a>
+						<a href="malito:info@devstudio.com" class="top-bar-link top-bar-contact-link">
+							<svg class="contact-icon" width="24" height="24">
+								<use href="./images/icons.svg#email"></use>
+							</svg>
+							info@devstudio.com</a
+						>
 					</li>
 					<li class="top-bar-nav-item">
-						<a href="tel:+380961111111" class="top-bar-link top-bar-contact-link">+38 096 111 11 11</a>
+						<a href="tel:+380961111111" class="top-bar-link top-bar-contact-link">
+							<svg class="contact-icon" width="24" height="24">
+								<use href="./images/icons.svg#smartphone"></use>
+							</svg>
+							+38 096 111 11 11</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -68,63 +78,63 @@
 					</ul>
 					<ul class="portfolio-list list">
 						<li class="portfolio-item">
-							<img src="images/portfolio/tehnokriak.svg" alt="ноутбук, сайт" width="370" />
+							<img src="images/portfolio/tehnokriak.jpg" alt="ноутбук, сайт" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Технокряк</h3>
 								<p class="portfolio-item-description">Веб-сайт</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/neworlean.svg" alt="баскетболтсти, спортсмени" width="370" />
+							<img src="images/portfolio/neworlean.jpg" alt="баскетболтсти, спортсмени" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Постер New Orlean vs Golden Star</h3>
 								<p class="portfolio-item-description">Дизайн</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/seafood.svg" alt="логотип ресторана Seafood" width="370" />
+							<img src="images/portfolio/seafood.jpg" alt="логотип ресторана Seafood" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Ресторан Seafood</h3>
 								<p class="portfolio-item-description">Додаток</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/prime.svg" alt="Навушники" width="370" />
+							<img src="images/portfolio/prime.jpg" alt="Навушники" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Проєкт Prime</h3>
 								<p class="portfolio-item-description">Маркетинг</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/boxes.svg" alt="дві коробки" width="370" />
+							<img src="images/portfolio/boxes.jpg" alt="дві коробки" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Проєкт Boxes</h3>
 								<p class="portfolio-item-description">Додаток</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/inspiration.svg" alt="комп'ютер, сайт" width="370" />
+							<img src="images/portfolio/inspiration.jpg" alt="комп'ютер, сайт" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Inspiration has no Borders</h3>
 								<p class="portfolio-item-description">Веб-сайт</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/limitedrdition.svg" alt="дизайн, книга" width="370" />
+							<img src="images/portfolio/limitedrdition.jpg" alt="дизайн, книга" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Видання Limited Edition</h3>
 								<p class="portfolio-item-description">Дизайн</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/lab.svg" alt="Маркетинг, бірка" width="370" />
+							<img src="images/portfolio/lab.jpg" alt="Маркетинг, бірка" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Проект LAB</h3>
 								<p class="portfolio-item-description">Маркетинг</p>
 							</div>
 						</li>
 						<li class="portfolio-item">
-							<img src="images/portfolio/growing.svg" alt="ноутбук, сайт, руки набирають текст" width="370" />
+							<img src="images/portfolio/growing.jpg" alt="ноутбук, сайт, руки набирають текст" width="370" />
 							<div class="portfolio-wrapper">
 								<h3 class="portfolio-item-name">Growing Business</h3>
 								<p class="portfolio-item-description">Додаток</p>
@@ -136,29 +146,84 @@
 		</main>
 
 		<footer class="footer">
-			<div class="container">
-				<a href="./index.html" class="footer-logo">
-					<span class="logo-blue">Web</span><span class="logo-white">Studio</span>
-				</a>
-				<address>
-					<ul class="footer-contact-list list">
-						<li class="footer-contact-item">
+			<div class="container footer-container">
+				<div class="footer-contact">
+					<a href="./index.html" class="footer-logo">
+						<span class="logo-blue">Web</span><span class="logo-white">Studio</span>
+					</a>
+					<address>
+						<ul class="footer-contact-list list">
+							<li class="footer-contact-item">
+								<a
+									href="https://goo.gl/maps/sbAmnMv2D6VNsKyL6"
+									class="footer-map-link"
+									target="_blank"
+									rel="noopener noreferrer nofollow">
+									м. Київ, пр-т Лесі Українки, 26
+								</a>
+							</li>
+							<li class="footer-contact-item">
+								<a href="malito:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a>
+							</li>
+							<li class="footer-contact-item">
+								<a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<div class="footer-social-links">
+					<p class="footer-social-title">Приєднуйтесь</p>
+					<ul class="footer-social-list list">
+						<li class="footer-social-item">
 							<a
-								href="https://goo.gl/maps/sbAmnMv2D6VNsKyL6"
-								class="footer-map-link"
+								class="footer-social-link"
+								href="https://instagram.com"
 								target="_blank"
-								rel="noopener noreferrer nofollow">
-								м. Київ, пр-т Лесі Українки, 26
+								rel="nofollow noopener noreferrer"
+								aria-label="Instagram">
+								<svg class="footer-social-icon" width="20" height="20">
+									<use href="./images/icons.svg#instagram"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="footer-contact-item">
-							<a href="malito:info@devstudio.com" class="footer-contact-link">info@devstudio.com</a>
+						<li class="footer-social-item">
+							<a
+								class="footer-social-link"
+								href="https://twitter.com"
+								target="_blank"
+								rel="nofollow noopener noreferrer"
+								aria-label="Twitter">
+								<svg class="footer-social-icon" width="20" height="20">
+									<use href="./images/icons.svg#twitter"></use>
+								</svg>
+							</a>
 						</li>
-						<li class="footer-contact-item">
-							<a href="tel:+380961111111" class="footer-contact-link">+38 096 111 11 11</a>
+						<li class="footer-social-item">
+							<a
+								class="footer-social-link"
+								href="https://facebook.com"
+								target="_blank"
+								rel="nofollow noopener noreferrer"
+								aria-label="Facebook">
+								<svg class="footer-social-icon" width="20" height="20">
+									<use href="./images/icons.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a
+								class="footer-social-link"
+								href="https://linkedin.com"
+								target="_blank"
+								rel="nofollow noopener noreferrer"
+								aria-label="Linkedin">
+								<svg class="footer-social-icon" width="20" height="20">
+									<use href="./images/icons.svg#linkedin"></use>
+								</svg>
+							</a>
 						</li>
 					</ul>
-				</address>
+				</div>
 			</div>
 		</footer>
 	</body>
