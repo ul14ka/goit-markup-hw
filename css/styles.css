@@ -22,6 +22,12 @@ body {
 	list-style: none;
 }
 
+.img-block {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -113,12 +119,10 @@ body {
 
 /* region Banner */
 .banner {
-	background: #2f303a;
 	padding: 200px 0;
 	text-align: center;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-img.jpeg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url("../images/banner-img.jpeg") no-repeat center;
 	background-size: cover;
 	max-width: 1600px;
 	margin: 0 auto;
@@ -148,7 +152,7 @@ body {
 	padding: 10px 32px;
 	border: none;
 	background: #2196f3;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	font-weight: 700;
 	line-height: 1.9;
@@ -162,16 +166,6 @@ body {
 	padding-bottom: 0;
 }
 
-.feature-img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 30px;
-	height: 120px;
-	border-radius: 4px;
-	background-color: #f5f4fa;
-}
-
 .feature-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -180,6 +174,34 @@ body {
 
 .feature-item {
 	flex-basis: calc((100% - 30px * 3) / 4);
+}
+
+.feature-item::before {
+	display: block;
+	content: "";
+	height: 120px;
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+.feature-icon-antenna::before {
+	background-image: url("../images/feature/antenna.svg");
+}
+
+.feature-icon-clock::before {
+	background-image: url("../images/feature/clock.svg");
+}
+
+.feature-icon-diagram::before {
+	background-image: url("../images/feature/diagrams.svg");
+}
+
+.feature-icon-astronaut::before {
+	background-image: url("../images/feature/astronaut.svg");
 }
 
 .feature-title {
@@ -243,8 +265,8 @@ body {
 .team-item {
 	flex-basis: calc((100% - 30px * 3) / 4);
 	background: #ffffff;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0 0 4px 4px;
 }
 
 .team-list .name {
@@ -359,7 +381,7 @@ body {
 .portfolio-filter-btn:focus {
 	background-color: #2196f3;
 	color: #fff;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -374,7 +396,7 @@ body {
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-link {
@@ -438,6 +460,8 @@ body {
 .footer-contact-link {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.6);
+	font-size: 14px;
+	line-height: 1.7;
 }
 
 .footer-map-link {
