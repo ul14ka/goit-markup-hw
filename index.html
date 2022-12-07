@@ -25,7 +25,7 @@
 				<nav class="top-bar-nav">
 					<ul class="top-bar-nav-list list">
 						<li class="top-bar-nav-item">
-							<a href="./index.html" class="top-bar-link">Студія</a>
+							<a href="./index.html" class="top-bar-link current">Студія</a>
 						</li>
 						<li class="top-bar-nav-item">
 							<a href="./portfolio.html" class="top-bar-link">Портфоліо</a>
@@ -47,9 +47,10 @@
 					<li class="top-bar-nav-item">
 						<a href="tel:+380961111111" class="top-bar-link top-bar-contact-link">
 							<svg class="contact-icon" width="16" height="16">
-								<use href="./images/icons.svg#smartphone"></use></svg
-							>+38 096 111 11 11</a
-						>
+								<use href="./images/icons.svg#smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -59,7 +60,7 @@
 			<section class="section banner">
 				<div class="container banner-container">
 					<h1 class="banner-title">Ефективні рішення для вашого бізнесу</h1>
-					<button type="button" class="banner-btn">Замовити послугу</button>
+					<button type="button" class="banner-btn" data-modal-open>Замовити послугу</button>
 				</div>
 			</section>
 
@@ -99,13 +100,37 @@
 					<h2 class="work-title">Чим ми займаємося</h2>
 					<ul class="work-list list">
 						<li class="work-item">
-							<img src="./images/work/Desktop_applications.jpg" alt="Десктопні додатки" width="370" height="294" />
+							<img
+								src="./images/work/Desktop_applications.jpg"
+								class="img-block"
+								alt="Десктопні додатки"
+								width="370"
+								height="294" />
+							<div class="work-overlay">
+								<p class="work-overlay-text">Десктопні додатки</p>
+							</div>
 						</li>
 						<li class="work-item">
-							<img src="./images/work/Mobile_applications.jpg" alt="Мобільні додатки" width="370" height="294" />
+							<img
+								src="./images/work/Mobile_applications.jpg"
+								class="img-block"
+								alt="Мобільні додатки"
+								width="370"
+								height="294" />
+							<div class="work-overlay">
+								<p class="work-overlay-text">Мобільні додатки</p>
+							</div>
 						</li>
 						<li class="work-item">
-							<img src="./images/work/Design_solutions.jpg" alt="Дизайнерські рішення" width="370" height="294" />
+							<img
+								src="./images/work/Design_solutions.jpg"
+								class="img-block"
+								alt="Дизайнерські рішення"
+								width="370"
+								height="294" />
+							<div class="work-overlay">
+								<p class="work-overlay-text">Дизайнерські рішення</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -495,5 +520,15 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal-close-btn" data-modal-close>
+					<svg class="close-icon" width="11" height="11">
+						<use href="./images/icons.svg#close-modal"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
