@@ -99,6 +99,7 @@ body {
 	align-items: center;
 	color: #212121;
 	text-decoration: none;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-bar-link.current::after {
@@ -335,11 +336,12 @@ body {
 	height: 44px;
 	width: 44px;
 	color: #afb1b8;
+	border-radius: 50%;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socials-link:hover,
 .team-socials-link:focus {
-	border-radius: 50%;
 	background-color: #2196f3;
 	color: #fff;
 }
@@ -366,6 +368,7 @@ body {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	color: #afb1b8;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -453,6 +456,8 @@ body {
 	letter-spacing: 0.03em;
 	border: none;
 	font-family: "Roboto";
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filter-btn:hover,
@@ -470,6 +475,7 @@ body {
 
 .portfolio-item {
 	flex-basis: calc((100% - 30px * 2) / 3);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
@@ -508,22 +514,6 @@ body {
 	letter-spacing: 0.03em;
 	color: #fff;
 }
-
-/*.portfolio-thumb:hover::before {*/
-/*	opacity: 1;*/
-/*	transform: translateY(0);*/
-/*}*/
-
-/*.portfolio-thumb::before {*/
-/*	content: "";*/
-/*	position: absolute;*/
-/*	display: inline-block;*/
-/*	width: 100%;*/
-/*	height: 100%;*/
-/*	background-color: rgba(33, 150, 243, 0.9);*/
-/*	opacity: 0;*/
-/*	transform: translateY(100%);*/
-/*}*/
 
 .portfolio-wrapper {
 	padding: 20px 24px;
@@ -618,6 +608,7 @@ body {
 	height: 44px;
 	background-color: rgba(255, 255, 255, 0.1);
 	fill: #fff;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
